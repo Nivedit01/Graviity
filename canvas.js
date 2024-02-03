@@ -49,7 +49,7 @@ class Ball {
     this.radius = radius
     this.color = color
     this.dy = dy
-    this.dx = dx;
+    this.dx = dx
   }
 
   draw() {
@@ -62,6 +62,7 @@ class Ball {
   }
 
   update() {
+    // condition to create bouncing effect
     if(this.y + this.radius + this.dy > canvas.height){
       this.dy = -this.dy * friction;
     }
@@ -71,6 +72,8 @@ class Ball {
     if(this.x + this.radius > canvas.width || this.x - this.radius < 0){
       this.dx = -this.dx;
     }
+    
+    // manages speed of the balls
     this.x += this.dx;
     this.y += this.dy;
     this.draw()
