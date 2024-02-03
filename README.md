@@ -1,4 +1,4 @@
-# Gravity Project
+# Graviity Project
 
 This project demonstrates gravity effects using HTML canvas. The code requires basic knowledge of HTML.
 
